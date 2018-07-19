@@ -1,34 +1,13 @@
-console.log("Grady's js file");
+console.log("Grady's js file: personal.js");
 
-const sinatraSpouses = [
 
-        {spouse: "Nancy",
-        dateBegin: 1962,
-        dateEnd: 1970,
-        status: "Divorced"
-        },
+const intro = document.createElement('div');
+const introTitle = document.createElement('h1');
+const introBody = document.createElement('h2');
+introTitle.textContent = "Frank Sinatra";
+introBody.textContent= "personal page";
 
-        
-        {
-        spouse: "Ava",
-        dateBegin: 1971,
-        dateEnd: 1975,
-        status: "divorced"
-        },
-        {
-        spouse: "Mia",
-        dateBegin: 1976,
-        dateEnd: 1977,
-        status: "divorced"
-        },
-        {
-        spouse: "Barbara",
-        dateBegin: 1978,
-        dateEnd: 1998,
-        status: "widowed"
-        },
 
-];
 
 for (var spouse of sinatraSpouses){
     if(spouse.status === "divorced") {
