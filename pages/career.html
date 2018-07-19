@@ -5,28 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sinatra's Career</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/career.css">
 </head>
 <body>
     <header>
-        <div id="navbar">
-            <a href="../index.html">Home</a>
-            <a href="career.html">Career</a>
-            <a href="personal.html">Personal Life</a>
-            <a href="news.html">In The News</a>
-        </div>
+        <nav>
+            <div id="navbar">
+                <a href="../index.html">Home</a>
+                <a class="active" href="career.html">Career</a>
+                <a href="personal.html">Personal Life</a>
+                <a href="news.html">In The News</a>
+            </div>
+        </nav>
     </header>
-    <div class="allContent">
-        <div id="introContent">
+    <div class="allContent container">
+
+        <div class="row">
+            <div id="introContent" class="card .col-sm-6">
+            </div>
+            <div id="skillsList" class="card .col-sm-6">
+            </div>
         </div>
-        <div id="skillsList">
+
+        <div class="row">
+            <div id="albumList" class="card .col-sm-12">
+            </div>
         </div>
-        <div id="albumList">
-        </div>
-        <div id="placesList">
-        </div>
-        <div id="collaboratorsList">
-        </div>
-        <div id="awardsList">
+
+        <div class="row">
+            <div id="placesList" class="card .col-sm-4">
+            </div>
+            <div id="collaboratorsList" class="card .col-sm-4">
+            </div>
+            <div id="awardsList" class="card .col-sm-4">
+            </div>
         </div>
    </div>
    <script src="../JS/careerData.js"></script>
