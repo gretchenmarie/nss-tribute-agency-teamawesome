@@ -4,6 +4,10 @@
     background-color: azure;
 }
 
+.info-frank-container {
+    background-color:#F7F7F8;
+}
+
 #fun-facts > ul {
     list-style-type: square;
     /* list-style-image: url('http://louie.land/icons/thumbs/mailsinatra.png'); */
