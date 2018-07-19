@@ -1,9 +1,36 @@
-.card1 {
-    float: left;
+
+h1{
+    text-align: center;
 }
-.card2 {
-    float: left;
-}
-.card3 {
-    float: left;
-}
+.flex-container{
+    
+       height: 20cm;
+        background:#121215 ;
+        display:flex;
+      flex-direction:row;
+      justify-content:space-around;
+        padding:20px;
+      border:solid;
+        border-radius:40px;
+      align-items:center;
+      flex-wrap:wrap;
+    width: 40%;}    
+
+.flex-item
+    {
+        border:solid;
+        box-shadow:10px -4px #8BA3A1 ;
+        border-radius: 20%;
+        background-color: #F7F7F8;
+      }
+   .newsevents   
+      {
+          height: 15cm;
+          width: 90%;
+        border:solid;
+        box-shadow:10px -4px #8BA3A1  ;
+        border-radius: 10%;
+        background-color:#F7F7F8 ;
+        text-align: center;
+      }
+
