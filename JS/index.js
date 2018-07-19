@@ -3,11 +3,11 @@ console.log("index.js")
 // track listings for duet album
 const track1 = {
     title: "The Lady is a Tramp",
-    artist: "Luther Vandross"
+    name: "Luther Vandross"
 }
 const track2 = {
     title: "What Now My Love",
-    artist: "Aretha Franklin"
+    name: "Aretha Franklin"
 }
 const track3 = {
     title: "I've Got a Crush on You",
@@ -70,5 +70,28 @@ const saveAlbumDB = function (duetAlbumObject, localStorageKey) {
     // Convert the Object into a string.
     const stringifiedAlbumDB = JSON.stringify(duetAlbumObject);
      //Create a key in local storage, and store the string version of your inventory database as the value
-    localStorage.setItem(localStorageKey, stringifiedDatabase);
+    localStorage.setItem(localStorageKey, stringifiedAlbumDB);
+}
+// call the function in order to send the DB to the local storage
+saveAlbumDB(duetAlbum, "Duet");
+
+// Get the string version of the local storage
+const albumString = localStorage.getItem("Duet");
+
+// Use JSON.parse() to convert the string back into an object
+let data = JSON.parse(albumString);
+
+// make a for in loop for the object, then make a for loop inside of the for-in loop
+// for-in loop is looping through the object from local storage (data)
+for (let albumValue in data) {
+    // for loop is looping through the keys inside of the object from local storage (data)
+    for (let i = 0; i < data[albumValue].length; i++) {
+        // assigning a variable to an item every time you iterate through the loop
+        const currentObject = data[albumValue][i];
+        //log to the console the current object to make sure it's looping properly
+        console.log(currentObject);
+        //
+        const liTag = document.createElement("li");
+        document.getElementById("collab-list").appendChild(liTag).innerHTML = `${currentObject.title}, with ${currentObject.name}`;
+    }
 }
