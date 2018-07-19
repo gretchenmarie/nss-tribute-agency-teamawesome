@@ -1,4 +1,6 @@
-
+.active {
+    color: white;
+}
 
 .img-frank-container{
     background-color: azure;
@@ -9,6 +11,6 @@
 }
 
 #fun-facts > ul {
-    list-style-type: square;
-    /* list-style-image: url('http://louie.land/icons/thumbs/mailsinatra.png'); */
+    /* list-style-type: square; */
+    list-style-image: url('http://louie.land/icons/thumbs/mailsinatra.png');
 }
