@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Frank Sinatra</title>
 </head>
-<body>
+<body style="background-color: #878B91;">
     <header>
         <nav>
 <!-- good looking navbar here -->
         </nav>
     </header>
-    <section class="img-frank-section">
+    <section class="img-frank-section container-fluid">
         <h1>Frank Sinatra</h1>
         <div id="frank-portrait">
             <!-- nice picture of frank sinatra -->
-            <img src="images/frank.jpg" alt="Frank Sinatra">
+            <img src="../images/frank.jpg" alt="Frank Sinatra">
         </div>
     </section>
     <section class="info-frank-section">
@@ -36,27 +36,40 @@
         </div>
         <div id="origin-country">
             <!-- country of origin and maybe where he lived? -->
-            <h3>Where he Lived</h3>
+            <h3>His Home</h3>
+            Born Francis Albert Sinatra on December 12, 1915 in Hoboken, New Jersey, an only child to Italian immigrants Natalie Catherine Garavente (“Dolly”) and Saverio Antonino Martino Sinatra (“Marty”).
         </div>
         <div id="fun-facts">
             <!-- list of fun facts about frank -->
             <h3>Fun Facts about Swoonatra!</h3>
+            <ul>
+                <li>Knew he had to be a singer after seeing Bing Crosby at Loew’s Journal Square in New Jersey, and had his first musical break with local music group The Hoboken Four in 1935, winning the popular Major Bowes and His Original Amateur Hour radio contest.</li>
+                <li>Hoboken celebrated Sinatra Day on October 30th 1947. 20,000 people lined the streets in the rain to celebrate with Frank.</li>
+                <li>Paid a ransom of $240,000 to free the then 19 year-old Frank Jr. from kidnappers in 1963. After being held for several days, Frank Jr. was released safely. The FBI eventually caught the kidnappers and recovered most of the ransom money.</li>
+                <li>Has an asteroid named after him – Sinatra 7934 – discovered in 1989.</li>
+            </ul>
         </div>
     </section>
+    <!-- a static block with media buttons on it -->
     <section class="collab-container">
         <div>
             <!-- a couple images for sure. possibly a carousel? -->
         </div>
-        <h3>Collaborators</h3>
-        <p>Maybe something about the collabs?</p>
+        <h3 id="collab-title">Collaborators</h3>
+        <ol id="collab-list">
+
+        </ol>
         <div>
-            <!-- list of collaborators pulled from JS file-->
+            <!-- list of collaborators pulled from localStorage -->
         </div>
     </section>
+    <footer>
+        <!-- gonna need a footer WITH links -->
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
