@@ -12,8 +12,48 @@ const SinatraCareerDatabase = {
 // SinatraCareerDatabase.collaborators = []
 // SinatraCareerDatabase.awards = []
 
+//skills
+const singing = {
+    skill: "Singing",
+}
+const acting = {
+    skill: "Acting",
+}
+const producer = {
+    skill: "Producing"
+}
+const showmanship = {
+    skill: "Showmanship",
+}
+const style = {
+    skill: "Dress Style",
+}
+
+SinatraCareerDatabase.skills.push(singing,acting,producer,showmanship,style);
+
 //places
-const Hoboken 
+const Hoboken = {
+    location: "Hoboken, New Jersey",
+    start: "1915",
+    End: "1936",
+}
+const Vegas = {
+    location: "Las Vegas, Nevada",
+    start: "1950",
+    End: "1953"
+}
+const NewYork = {
+    location: "Manhattan, NewYork",
+    start: "1960",
+    end: "1970",
+}
+const PalmSprings = {
+    location: "Palm Springs, California",
+    start: "1970",
+    end: "1998",
+}
+
+SinatraCareerDatabase.places.push(Hoboken,Vegas,NewYork,PalmSprings);
 
 //albums
 const MyWay = {
