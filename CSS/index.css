@@ -1,7 +1,11 @@
 
 
-.img-frank-section{
+.img-frank-container{
     background-color: azure;
+}
+
+.info-frank-container {
+    background-color:#F7F7F8;
 }
 
 #fun-facts > ul {
