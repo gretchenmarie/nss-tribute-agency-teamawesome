@@ -1,13 +1,17 @@
 body{
     background-color: #797A7B;
 }
+a{
+    color:#8BA3A1;
+}
 
 .card{
     margin: 1em;
     background-color: white  ;
     border-radius: 10%;
     text-align: center;
-    box-shadow:10px -4px #121215  ;
+    box-shadow:10px -4px #121215;
+    z-index: -20;  
 }
 h1{
     text-align: center;
@@ -92,4 +96,17 @@ h1{
       .youtube {
         background: #bb0000;
         color: white;
+      }
+      li{
+          font-size: 19px;
+          text-align: center;
+      }
+      h2{
+        width: 40%;
+      }
+      .card-img-top {
+          border-radius: 10%;
+      }
+      footer{
+        border: solid #121215 6px;
       }
