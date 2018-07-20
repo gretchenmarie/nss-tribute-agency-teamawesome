@@ -1,14 +1,22 @@
-#navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
+
   
-  /* Navbar links */
-  #navbar a {
-    float: left;
+  
+  #navbar  {
+    overflow:hidden;
+    border: solid black 6px;
+    width: 100%;
     display: block;
-    color: #f2f2f2;
+    color: #8BA3A1;
     text-align: center;
-    padding: 14px;
-    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+  
+    padding: 20px;   
+    background:#F7F7F8  ;
+  }
+  #navbar a{
+    padding: 1cm;
+  }
+  #navbar a.active{
+    color:black;
   }

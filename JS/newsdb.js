@@ -17,7 +17,7 @@ const newsFeed = {
         },
         
         frankDeath = {
-            event:" Death of Frank Sinatra",
+            event:" Death of Frank Sinatra ",
             date:"May 14, 1998",
             location:"Los Angeles",
             typeOfEvent:"death",
@@ -44,7 +44,7 @@ const newsFeed = {
         musical = {
             event:"My Way, a musical tribute to Frank Sinatra",
             date:"July 12, 2018",
-            location:"Hitlton Head Preparatory school",
+            location:"Hilton Head Preparatory school",
             typeOfEvent:"musical production",
             where:"Hilton Head",
             link:"https://www.islandpacket.com/entertainment/local-events/article214769875.html",
@@ -87,8 +87,8 @@ for (let i = 0; i < data[newslist].length; i++) {
     //get the element-create an id in the ul tage the child is the li 
     //named ultag then go into the HTML (innerHTML) then the new constant called currentObject
     document.getElementById("newslist").appendChild(ultag).innerHTML =
-     `${currentObject.event},  ${currentObject.date},  ${currentObject.location},
-     ${currentObject.typeOfEvent},  ${currentObject.where},  ${currentObject.link}`;
+     `${currentObject.event}, ${currentObject.date}, ${currentObject.location},
+     ${currentObject.typeOfEvent}, ${currentObject.where}, ${currentObject.link}`;
 
 
 
