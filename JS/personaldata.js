@@ -80,10 +80,10 @@ function loadData(nameTag){
     return parsedObject;
 }
 
-console.log(loadData("Nancy"));
-console.log(loadData("Ava"));
-console.log(loadData("Mia"));
-console.log(loadData("Barbara"));
+// console.log(loadData("Nancy"));
+//console.log(loadData("Ava"));
+// console.log(loadData("Mia"));
+// console.log(loadData("Barbara"));
 
 
 

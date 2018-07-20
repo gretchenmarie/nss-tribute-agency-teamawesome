@@ -60,14 +60,3 @@ newParagraph.appendChild(newContent);
 paragraph1 = parentDiv.firstChild;
 parentDiv.insertBefore(newParagraph, paragraph1);
 
-
-// <li>Nicknames: 
-//               <ul> <li>The Voice</li>
-//                 <li>Chairman of the Board</li>
-//                 <li>Ol' Blue Eyes</li>
-//                 <li>Swoonatra</li>
-//                 <li>The Sultan of Swoon</li>
-//                 <li>La Voz</li>
-//                 <li>Frankie</li>
-//                </ul> 
-//         </li>
