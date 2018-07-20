@@ -7,6 +7,8 @@
     <title>Sinatra's Career</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/career.css">
+    <!-- font awesome stylesheet (social media icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -19,29 +21,43 @@
             </div>
         </nav>
     </header>
-    <div class="allContent container">
 
+    <div class="container">
         <div class="row">
-            <div id="introContent" class="card .col-sm-6">
+            <div id="introContent" class="card col-sm-6">
             </div>
-            <div id="skillsList" class="card .col-sm-6">
+            <div id="skillsList" class="card col-sm-6">
             </div>
         </div>
+    </div>
 
+    <div class="container">
+        <div class="row" id="albumList">
+        </div>
+    </div>
+
+    <div ="container">
         <div class="row">
-            <div id="albumList" class="card .col-sm-12">
+            <div id="placesList" class="card col-sm-4">
+            </div>
+            <div id="collaboratorsList" class="card col-sm-4">
+            </div>
+            <div id="awardsList" class="card col-sm-4">
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <div id="placesList" class="card .col-sm-4">
-            </div>
-            <div id="collaboratorsList" class="card .col-sm-4">
-            </div>
-            <div id="awardsList" class="card .col-sm-4">
-            </div>
-        </div>
-   </div>
+    <div class="icon-bar">
+            <a href="https://www.facebook.com" class="facebook rounded-top"><i class="fa fa-facebook"></i></a> 
+            <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="https://plus.google.com/discover" class="google"><i class="fa fa-google"></i></a> 
+            <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com" class="youtube rounded-bottom"><i class="fa fa-youtube"></i></a> 
+    </div>
+
+    <footer>
+        <!-- footer here -->
+    </footer>
    <script src="../JS/careerData.js"></script>
    <script src="../JS/career.js"></script>
 </body>
