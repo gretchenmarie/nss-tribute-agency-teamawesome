@@ -52,15 +52,52 @@ SinatraSpousesDatabase.spouses.push(Mia);
 SinatraSpousesDatabase.spouses.push(Barbara);
 
 
+
+//instead of writing this code over and over again, you can make a function 
+//to make it dynamic you need to pass it the parameters that will change each time - the name that you want to store it as, and the object you want to store
+function setData(jsObject, nameTag){
+    //stringify it!
+    let stringifiedObject = JSON.stringify(jsObject);
+    //send it to local storage
+    localStorage.setItem(nameTag, stringifiedObject);
+}
+
+setData(Nancy, "Nancy");
+setData(Ava, "Ava");
+setData(Mia, "Mia");
+setData(Barbara, "Barbara")
+
+
+
+
+
+
+//we will do the same thing when loading the data back from local storage. This time we will get the data as a string and we need to make it back into a javascript object by using parse
+function loadData(nameTag){
+    let stringifiedObject = localStorage.getItem(nameTag);
+    let parsedObject = JSON.parse(stringifiedObject);
+    //we need to get this object out of the function. Return will return it to where we invoked it
+    return parsedObject;
+}
+
+console.log(loadData("Nancy"));
+console.log(loadData("Ava"));
+console.log(loadData("Mia"));
+console.log(loadData("Barbara"));
+
+
+
+
+
 // Persist the database to localStorage
 //saveDatabase(SinatraSpousesDatabase, "Marriages")
 
 
-const saveDatabase = function (databaseObject, localStorageKey) {
+let saveDatabase = function (databaseObject, localStorageKey) {
     /*
         Convert the Object into a string.
     */
-    const stringifiedDatabase = JSON.stringify(databaseObject)
+    let stringifiedDatabase = JSON.stringify(databaseObject)
 
     /*
         Create a key in local storage, and store the string
@@ -91,14 +128,14 @@ saveDatabase(SinatraSpousesDatabase, "Marriages");
 
  console.log(data);
 
- for (spouses in SinatraSpousesDatabase) {
-    if(spouses.status === "Divorced") {
-        console.log(data + " all ended in divorce");
-    }
+//  for (spouses in SinatraSpousesDatabase) {
+//     if(spouses.status === "Divorced") {
+//         console.log(data + " all ended in divorce");
+//     }
 
-    else {console.log("His last marriage ended with his passing in 1998")}
+//     else {console.log("His last marriage ended with his passing in 1998")}
 
-};
+// };
 
 
  // below is Maddy's code for putting the local storage into the page:

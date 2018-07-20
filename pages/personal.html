@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
     <title>Frank Sinatra personal page</title>
 </head>
-<body>
-    
+<body style="background-color: #878B91;">
+    <nav>
+        <!-- good looking navbar here -->
+                    <div id="navbar">
+                        <a href="../index.html">Home</a>
+                        <a href="career.html">Career</a>
+                        <a class="active" href="personal.html">Personal Life</a>
+                        <a href="news.html">In The News</a>
+                    </div>
+                </nav>
     
     <!-- MVP:  Birth date with country of origin.
     Birth name (if different than public name)
@@ -18,12 +28,16 @@
 
 
 
-<div id="content">
+<div id="demo"> </div>
 
 
 
 <h1>Frank Sinatra</h1>
 <h2>Personal page</h2>
+
+
+
+
 <ul>
     <li>Birth date: December 12, 1915, country of origin: USA
         <br/><p>On his original birth certificate, Sinatra's name was recorded incorrectly as "Frank Sinestro", a clerical error. In May 1945, he officially corrected the name on his birth certificate to "Francis A. Sinatra".</p>
@@ -37,7 +51,7 @@
                 <li>his first wife, Nancy Sinatra (m. 1939–1951).</li>
                 <li>Sinatra was married to Hollywood actress Ava Gardner from 1951 to 1957. 
                     <br/>
-                    <img src="../images/Ava_Gardner.jpg" alt="Ava Gardner">
+                    <img src="../images/Ava_Gardner.jpg" alt="Ava Gardner" class="rounded-circle">
 
                 </li>
                 <li>He married Mia Farrow on July 19, 1966, a short marriage that ended with divorce in Mexico in August 1968</li>
@@ -46,8 +60,9 @@
 
         </li>
         <li>children: 
-            <ol><li>Nancy <br/><img src="../images/Nancy_Sinatra_(440 px).png" alt="Nancy Sinatra">  <br/>   
-                <li>Frank Jr.<br/> <img src="../images/FrankSinatraJrByPhilKonstantin(440px).jpg" alt="frank sinatra jr.">
+            <ol><li>Nancy <br/><img src="../images/Nancy_Sinatra_(440 px).png" alt="Nancy Sinatra" class="rounded">  <br/>   
+                <li>Frank Jr.<br/> <img src="../images/FrankSinatraJrByPhilKonstantin(440px).jpg" alt="frank sinatra jr." class="rounded">
+                   
                 <li><br/>Tina (no photo available)</li>
                 </ol>
         
@@ -63,6 +78,10 @@
                 <li>Frankie</li>
                </ul> 
         </li>
+        <div id="parentDiv">
+            <div id="div1">The text above has been created dynamically.</div>
+        </div>
+
         <li>parents: Anthony Martin Sinatra, Natalie Della Garaventa</li>
     </li>
 </ul>
@@ -70,12 +89,14 @@
 
 
 
-<!-- CDN FOR BOOTSTRAP
+<!--CDN FOR BOOTSTRAP-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 <!--LINK TO MAIN.JS-->
+
+<script src="../js/localstorage_template.js"></script>
 <script src="../js/personaldata.js"></script>
 <script src="../js/personal.js"></script>
 <script src='../js/main.js'></script>
