@@ -175,11 +175,15 @@ addSkills(skills);
 let albumsContent = document.querySelector("#albumList");
 
 function addAlbums(info){
+    albumsContent.innerHTML +=
+        `<div class="album-list .card-group">
+         </div>`;
+    let div = document.querySelector(".album-list");
     for(let i = 0; i < info.length; i++){
-        albumsContent.innerHTML +=
-            `<div class="card col-sm">
+        div.innerHTML +=
+            `<div class="card .col-sm-4">
                 <h2>${info[i].album}</h2>
-                <img src="${info[i].cover}" alt="${info[i].title}" class="img-thumbnail">
+                <img src="${info[i].cover}" alt="${info[i].title}">
                 <p>${info[i].year}</p>
             </div> `
     }
