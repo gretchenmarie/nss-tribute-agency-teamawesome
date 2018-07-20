@@ -88,7 +88,7 @@ for (let albumValue in data) {
     for (let i = 0; i < data[albumValue].length; i++) {
         // assigning a variable to an item every time you iterate through the loop
         const currentObject = data[albumValue][i];
-        //log to the console the current object to make sure it's looping properly
+        // log to the console the current object to make sure it's looping properly
         console.log(currentObject);
         //
         const liTag = document.createElement("li");
