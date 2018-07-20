@@ -85,6 +85,10 @@ body {
     padding: 1cm;
   }
 
+  #footer {
+    border: solid #121215 6px;
+  }
+
 /* Granny Smith #8BA3A1 <-- Light Accent
 Desert Storm: #F7F7F8 <-- Light Shades
 Oslo Gray: #878B91 <-- Dark Accent
