@@ -19,19 +19,28 @@
     color: #878B91;
 }
 
+.card {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
 .card-header {
     font-family: 'Julius Sans One', sans-serif;
 }
+
 .active {
     color: #F7F7F8;
 }
 
-.img-frank-container{
+.img-frank-container {
     background-color: #797A7B;
 }
 
 .img-frank-container > div > #frank-pic{
     border-radius: 50%;
+}
+
+#frank-pic {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .info-frank-container {
@@ -47,16 +56,29 @@
     /* list-style-image: url('https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/89/44/0d/89440d19-8dae-666e-51e1-268b086f3f49/source/44x44cc.jpg'); */
 }
 
+#origin-country {
+   background-color: #878B91;
+}
+
 #list-item {
     margin-top: 0;
 }
+
 
 #collab-title {
     padding: 0px;
 }
 
+#collab-list {
+    padding: 20px;
+}
+
 .carousel-item {
     width: 50%;
+}
+
+.carousel-inner {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .icon-bar {

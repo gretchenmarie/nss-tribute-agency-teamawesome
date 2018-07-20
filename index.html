@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Frank Sinatra</title>
 </head>
-<body class="container-fluid" style="background-color: #797A7B;">
+<body class="container-fluid p-0" style="background-color: #797A7B;">
     <header>
         <nav>
 <!-- good looking navbar here -->
@@ -24,18 +24,18 @@
             </div>
         </nav>
     </header>
-    <section class="d-flex img-frank-container justify-content-center container-fluid">
+    <section class="d-flex img-frank-container justify-content-center container-fluid plr-2">
         <div class="d-flex flex-column">
-            <h1 style="text-align: center; font-family: Special Elite, cursive;">Frank Sinatra</h1>
+            <h1 class="display-3 mt-4" style="text-align: center; font-family: Special Elite, cursive;">Frank Sinatra</h1>
             <!-- nice picture of frank sinatra -->
             <img id="frank-pic" src="http://www.bohemiaticket.cz/photos/db/57/db57d4caf42e8d79b3e3b891d510bf3e-7324-750x450-fit.jpg" alt="Frank Sinatra">
         </div>
     </section>
-    <section class="info-frank-container d-flex align-items-center flex-column">
+    <section class="info-frank-container d-flex align-items-center flex-column p-2">
         <div class="d-flex flex-row justify-content-center">
         <div class="card col-3 m-5" style="background-color: #121215; color: #f7f7f8;" id="aliases">
             <!-- list of aliases -->
-            <h3 class="card-header" styles="font-family: Special Elite, cursive; background-color: #878B91;">Nicknames</h3>
+            <h3 class="card-header" styles="font-family: Special Elite, cursive;">Nicknames</h3>
             <ul class="card-body">
                 <li>Swoonatra</li>
                 <li>The Voice</li>
@@ -70,7 +70,7 @@
         <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="https://www.youtube.com" class="youtube rounded-bottom"><i class="fa fa-youtube"></i></a> 
     </div>
-    <section class="collab-container card d-flex align-items-center flex-column">
+    <section class="collab-container card d-flex align-items-center flex-column m-5" style="background-color: #878B91;">
             <div class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -84,7 +84,7 @@
                       </div>
                     </div>
                   </div>
-        <h3 class="card-header" id="collab-title">Collaborators</h3>
+        <h3 class="card-header display-4 pt-3" id="collab-title">Collaborators</h3>
         <ol class="card-text" id="collab-list">
             <!-- list of collaborators pulled from localStorage -->
         </ol>
