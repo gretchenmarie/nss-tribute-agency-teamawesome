@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Frank Sinatra personal page</title>
+    <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- font awesome stylesheet (social media icons) -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+   crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" media="screen" href="../CSS/styles.css" />
+   <link rel="stylesheet" type="text/css" media="screen" href="../CSS/navbar.css" />
+   <link rel="stylesheet" type="text/css" media="screen" href="../CSS/personal.css" />
+
+ <!-- font awesome stylesheet (social media icons) -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   <title>Frank Sinatra</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+<!-- good looking navbar here -->
+            <div id="navbar">
+                <a href="../index.html">Home</a>
+                <a href="career.html">Career</a>
+                <a class="active" href="personal.html">Personal Life</a>
+                <a href="news.html">In The News</a>
+            </div>
+        </nav>
+    </header>
     
     <!-- MVP:  Birth date with country of origin.
     Birth name (if different than public name)
@@ -30,7 +52,7 @@
                 <li>his first wife, Nancy Sinatra (m. 1939–1951).</li>
                 <li>Sinatra was married to Hollywood actress Ava Gardner from 1951 to 1957. 
                     <br/>
-                    <img src="images/Ava_Gardner.jpg" alt="Ava Gardner">
+                    <img src="../images/Ava_Gardner.jpg" alt="Ava Gardner">
 
                 </li>
                 <li>He married Mia Farrow on July 19, 1966, a short marriage that ended with divorce in Mexico in August 1968</li>
@@ -39,8 +61,8 @@
 
         </li>
         <li>children: 
-            <ol><li>Nancy <br/><img src="images/Nancy_Sinatra_(440 px).png" alt="Nancy Sinatra">  <br/>   
-                <li>Frank Jr.<br/> <img src="images/FrankSinatraJrByPhilKonstantin(440px).jpg" alt="frank sinatra jr.">
+            <ol><li>Nancy <br/><img src="../images/Nancy_Sinatra_(440 px).png" alt="Nancy Sinatra">  <br/>   
+                <li>Frank Jr.<br/> <img src="../images/FrankSinatraJrByPhilKonstantin(440px).jpg" alt="frank sinatra jr.">
                 <li><br/>Tina (no photo available)</li>
                 </ol>
         
@@ -59,10 +81,41 @@
         <li>parents: Anthony Martin Sinatra, Natalie Della Garaventa</li>
     </li>
 
+<!-- a static block with media buttons on it -->
+<div class="icon-bar">
+    <a href="#" class="facebook rounded-top"><i class="fa fa-facebook"></i></a> 
+    <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a> 
+    <a href="https://www.google.com" class="google"><i class="fa fa-google"></i></a> 
+    <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com" class="youtube rounded-bottom"><i class="fa fa-youtube"></i></a> 
+</div>
+
+
+
+
 
 </ul>
 
 
-    <script src='js/main.js'></script>
+    <script src='../js/main.js'></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+  crossorigin="anonymous"></script>
+<script src="../JS/news.js"></script>
+<script src="../JS/newsdb.js"></script>
 </body>
+<footer>
+    <div class="d-flex navbar navbar-expand-lg" id="footer" style="background-color: #F7F7F8">
+        <a class="navbar" style="color: #8BA3A1" href="http://nashvillesoftwareschool.com/">©Cohort 27 y'all</a>
+        <div class="navbar-nav">
+                <a class="nav-item nav-link-action p-2" style="color: #8BA3A1" href="http://sinatra.com/100facts/">More About Frank</a>
+        </div>
+        
+</div>
+</footer>
+
 </html>
