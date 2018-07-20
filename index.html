@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Julius+Sans+One|Special+Elite" rel="stylesheet">
+    <!-- font awesome stylesheet (social media icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Frank Sinatra</title>
 </head>
-<body class="container-fluid flex-column" style="background-color: #878B91;">
+<body class="container-fluid" style="background-color: #797A7B;">
     <header>
         <nav>
 <!-- good looking navbar here -->
@@ -20,18 +24,19 @@
             </div>
         </nav>
     </header>
-    <section class="img-frank-container container-fluid ">
-        <h1>Frank Sinatra</h1>
-        <div id="frank-portrait">
+    <section class="d-flex img-frank-container justify-content-center container-fluid">
+        <div class="d-flex flex-column">
+            <h1 style="text-align: center; font-family: Special Elite, cursive;">Frank Sinatra</h1>
             <!-- nice picture of frank sinatra -->
-            <img src="../images/frank.jpg" alt="Frank Sinatra">
+            <img id="frank-pic" src="http://www.bohemiaticket.cz/photos/db/57/db57d4caf42e8d79b3e3b891d510bf3e-7324-750x450-fit.jpg" alt="Frank Sinatra">
         </div>
     </section>
-    <section class="info-frank-container">
-        <div id="aliases">
+    <section class="info-frank-container d-flex align-items-center flex-column">
+        <div class="d-flex flex-row justify-content-center">
+        <div class="card col-3 m-5" style="background-color: #121215; color: #f7f7f8;" id="aliases">
             <!-- list of aliases -->
-            <h3>Nicknames</h3>
-            <ul>
+            <h3 class="card-header" styles="font-family: Special Elite, cursive; background-color: #878B91;">Nicknames</h3>
+            <ul class="card-body">
                 <li>Swoonatra</li>
                 <li>The Voice</li>
                 <li>La Voz</li>
@@ -40,16 +45,17 @@
                 <li>The Sultan of Swoon</li>
             </ul>
         </div>
-        <div id="origin-country">
+        <div class="card m-5"id="origin-country">
             <!-- country of origin and maybe where he lived? -->
-            <h3>His Home</h3>
-            Born Francis Albert Sinatra on December 12, 1915 in Hoboken, New Jersey, an only child to Italian immigrants Natalie Catherine Garavente (“Dolly”) and Saverio Antonino Martino Sinatra (“Marty”).
+            <h3 class="card-header" styles="font-family: Julius Sans One;">His Home</h3>
+            <p class="card-body">Born Francis Albert Sinatra on December 12, 1915 in Hoboken, New Jersey, an only child to Italian immigrants Natalie Catherine Garavente (“Dolly”) and Saverio Antonino Martino Sinatra (“Marty”). Sinatra developed an interest in music, particularly big band jazz, at a young age.He listened to Gene Austin, Rudy Vallée, Russ Colombo, and Bob Eberly, and idolized Bing Crosby.</p>
         </div>
-        <div id="fun-facts">
+        </div>
+        <div class="card m-5" id="fun-facts">
             <!-- list of fun facts about frank -->
-            <h3>Fun Facts about Swoonatra!</h3>
-            <ul>
-                <li>Knew he had to be a singer after seeing Bing Crosby at Loew’s Journal Square in New Jersey, and had his first musical break with local music group The Hoboken Four in 1935, winning the popular Major Bowes and His Original Amateur Hour radio contest.</li>
+            <h3 class="card-header" styles="font-family: Julius Sans One;">Fun Facts about Swoonatra!</h3>
+            <ul class="card-body m-5 p-0" style="text-align: top">
+                <li><span class="list-item">Knew he had to be a singer after seeing Bing Crosby at Loew’s Journal Square in New Jersey, and had his first musical break with local music group The Hoboken Four in 1935, winning the popular Major Bowes and His Original Amateur Hour radio contest.</span></li>
                 <li>Hoboken celebrated Sinatra Day on October 30th 1947. 20,000 people lined the streets in the rain to celebrate with Frank.</li>
                 <li>Paid a ransom of $240,000 to free the then 19 year-old Frank Jr. from kidnappers in 1963. After being held for several days, Frank Jr. was released safely. The FBI eventually caught the kidnappers and recovered most of the ransom money.</li>
                 <li>Has an asteroid named after him – Sinatra 7934 – discovered in 1989.</li>
@@ -57,17 +63,40 @@
         </div>
     </section>
     <!-- a static block with media buttons on it -->
-    <section class="collab-container">
-        <div>
-            <!-- a couple images for sure. possibly a carousel? -->
-        </div>
-        <h3 id="collab-title">Collaborators</h3>
-        <ol id="collab-list">
+    <div class="icon-bar">
+        <a href="#" class="facebook rounded-top"><i class="fa fa-facebook"></i></a> 
+        <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="https://www.google.com" class="google"><i class="fa fa-google"></i></a> 
+        <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com" class="youtube rounded-bottom"><i class="fa fa-youtube"></i></a> 
+    </div>
+    <section class="collab-container card d-flex align-items-center flex-column">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://img.discogs.com/9ndAqW4VHVUadVqFdP_jnlOmnz0=/fit-in/479x480/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3873342-1347647499-6843.jpeg.jpg" alt="Duet Album Cover">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="http://s1.ticketm.net/img/tat/dam/a/733/c4ea09b5-a527-41cd-b0a5-71c309825733_510901_CUSTOM.jpg" alt="Frank and Barbra">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="http://www.spruillhousemusic.com/img/mit-8.jpg" alt="Frank and Aretha">
+                      </div>
+                    </div>
+                  </div>
+        <h3 class="card-header" id="collab-title">Collaborators</h3>
+        <ol class="card-text" id="collab-list">
             <!-- list of collaborators pulled from localStorage -->
         </ol>
     </section>
     <footer>
         <!-- gonna need a footer WITH links -->
+        <div class="d-flex navbar navbar-expand-lg" id="footer" style="background-color: #F7F7F8">
+                <a class="navbar" style="color: #8BA3A1" href="http://nashvillesoftwareschool.com/">©Cohort 27 y'all</a>
+                <div class="navbar-nav">
+                        <a class="nav-item nav-link-action p-2" style="color: #8BA3A1" href="http://sinatra.com/100facts/">More About Frank</a>
+                </div>     
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
