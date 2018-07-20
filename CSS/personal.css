@@ -68,3 +68,7 @@
     background: #bb0000;
     color: white;
   }
+
+  #footer {
+    border: solid #121215 6px;
+  }
